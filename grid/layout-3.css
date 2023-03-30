@@ -1,0 +1,188 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 20px;
+  /* grid-auto-flow: row; */
+  grid-template-areas:
+    "one one two two three three"
+    "one one two two three three"
+    "four four five five six six"
+    "four four five five six six"
+    "seven seven eight eight nine nine"
+    "seven seven eight eight nine nine";
+  width: 80%;
+  height: 50%;
+  background-color: aqua;
+}
+
+.one {
+  grid-area: one;
+  background-color: rgb(255, 0, 0);
+}
+
+.two {
+  background-color: rgb(255, 0, 0);
+
+  grid-area: two;
+}
+
+.three {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Gridofthree Gridofthree Gridofthree Gridofthree"
+    "gridthree-1 gridthree-1 gridthree-2 gridthree-2"
+    "gridthree-3 gridthree-3 gridffour gridffour"
+    "gridfive gridfive gridsex gridsex";
+  grid-area: three;
+  background-color: rgb(255, 0, 0);
+  justify-content: center;
+  align-items: center;
+}
+
+.Gridofthree {
+  grid-area: Gridofthree;
+  background-color: rgb(0, 0, 0);
+  gap: 5px;
+  color: rgb(255, 0, 255);
+  text-align: center;
+  font-weight: bold;
+}
+
+.gridthree-1 {
+  background-color: rgb(255, 255, 255);
+  grid-area: gridthree-1;
+}
+
+.gridthree-2 {
+  background-color: rgb(255, 255, 255);
+  grid-area: gridthree-2;
+}
+
+.gridthree-3 {
+  background-color: rgb(255, 255, 255);
+  grid-area: gridthree-3;
+}
+
+.gridffour {
+  background-color: rgb(255, 255, 255);
+  grid-area: gridffour;
+}
+
+.gridfive {
+  background-color: rgb(255, 255, 255);
+  grid-area: gridfive;
+}
+
+.gridsex {
+  background-color: rgb(255, 255, 255);
+  grid-area: gridsex;
+}
+
+.four {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "anothergridfour anothergridfour anothergridfour anothergridfour anothergridfour anothergridfour anothergridfour anothergridfour anothergridfour"
+    "first first first . . . . . ."
+    ". . . second second second . . ."
+    ". . . . . . third third third";
+  grid-area: four;
+}
+
+.anothergridfour {
+  grid-area: anothergridfour;
+  background-color: rgb(0, 0, 0);
+  gap: 10px;
+  color: rgb(85, 0, 255);
+  text-align: center;
+  font-weight: bold;
+}
+
+.first {
+  grid-area: first;
+  background-color: rgb(255, 255, 255);
+
+}
+
+.second {
+  background-color: rgb(255, 255, 255);
+
+  grid-area: second;
+}
+
+.third {
+  background-color: rgb(255, 255, 255);
+
+  grid-area: third;
+}
+
+.five {
+  grid-area: five;
+  background-color: rgb(255, 0, 0);
+}
+
+.six {
+  grid-area: six;
+  background-color: rgb(255, 0, 0);
+}
+
+.seven {
+  grid-area: seven;
+  background-color: rgb(255, 0, 0);
+}
+
+.eight {
+  grid-area: eight;
+  background-color: rgb(255, 0, 0);
+}
+
+.nine {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "gridnine gridnine gridnine gridnine gridnine gridnine gridnine gridnine"
+    "gridnine-1 gridnine-1 gridnine-2 gridnine-2 gridnine-3 gridnine-3 gridnine-4 gridnine-4"
+    ". . . . . . . .";
+  grid-area: nine;
+  background-color: rgb(255, 0, 0);
+  color: rgb(255, 140, 0);
+  text-align: center;
+  font-weight: bold;
+}
+
+.gridnine {
+  grid-area: gridnine;
+  background-color: #000;
+  gap: 5px;
+}
+
+.gridnine-1 {
+  grid-area: gridnine-1;
+  background-color: white;
+}
+
+.gridnine-2 {
+  grid-area: gridnine-2;
+  background-color: white;
+}
+
+.gridnine-3 {
+  grid-area: gridnine-3;
+  background-color: white;
+}
+
+.gridnine-4 {
+  grid-area: gridnine-4;
+  background-color: white;
+}

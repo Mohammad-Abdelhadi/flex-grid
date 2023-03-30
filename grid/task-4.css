@@ -1,0 +1,91 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-gap: 10px;
+  width: 1000px;
+  height: 600px;
+  background-color: aqua;
+}
+
+.box {
+  text-align: center;
+}
+
+.navbar {
+  grid-area: 1 / 4 / 2 / 7;
+}
+
+.logo {
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+.sidebar {
+  grid-area: 2 / 1 / 7 / 4;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.secondnavbar {
+  grid-area: 2 / 4 / 3 / 7;
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.secondnavbar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+.secondnavbar ul li {
+  margin: 0 35px;
+}
+
+
+.navbarcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbarcontainer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+.navbarcontainer ul li {
+  margin: 0 35px;
+}
+
+
+
+.sidebar ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+
+li {
+  margin: 10px 0;
+  background-color: white;
+  display: inline-block;
+}
