@@ -1,0 +1,60 @@
+.container {
+  background-color: rgb(150, 144, 144);
+  width: 1000px;
+  height: 600px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+form {
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+}
+.wrapper {
+  display: grid;
+
+  grid-template-areas:
+    "First-col First-col  "
+    "two two "
+    "textarea textarea   "
+    "city-pin city-pin "
+    "time-cv time-cv ";
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+h2 {
+  text-align: center;
+}
+.box {
+  margin: 5px 0 5px 20px;
+  display: grid;
+  margin: 10px 10px;
+}
+.one {
+  grid-area: First-col;
+}
+.two {
+  grid-area: two;
+}
+.textarea {
+  grid-area: textarea;
+}
+.city-pin {
+  grid-area: city-pin;
+}
+.time-cv {
+  grid-area: time-cv;
+}
+.button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 3px;
+  color: red;
+}
+input {
+  border-radius: 5;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  -ms-border-radius: 5;
+  -o-border-radius: 5;
+}
