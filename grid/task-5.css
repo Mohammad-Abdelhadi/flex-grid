@@ -14,7 +14,7 @@ form {
   display: grid;
 
   grid-template-areas:
-    "First-col First-col  "
+    " h2 h2 First-col First-col  "
     "two two "
     "textarea textarea   "
     "city-pin city-pin "
@@ -23,10 +23,9 @@ form {
   grid-template-columns: repeat(2, 1fr);
 }
 h2 {
-  text-align: center;
+  grid-area: h2;
 }
 .box {
-  margin: 5px 0 5px 20px;
   display: grid;
   margin: 10px 10px;
 }
